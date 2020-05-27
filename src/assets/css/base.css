@@ -1,0 +1,22 @@
+@import "normalize.css";
+
+:root { /*获取跟元素html*/
+    --large-size: 50px; /*定义变量*/
+
+    --color-text: #666;
+    --color-high-text: #ff5777;
+    --color-tint: #ff8198;
+    --color-background: #ffffff;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+::before
+::after {
+    /*使用变量*/
+    font-size: var(--large-size);
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
